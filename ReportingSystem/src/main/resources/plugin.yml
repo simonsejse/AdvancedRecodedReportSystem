@@ -1,0 +1,27 @@
+name: ReportSystem
+version: ${project.version}
+main: com.simonsejse.ReportSystem
+author: simonsejse
+api-version: 1.13
+commands:
+  report:
+
+permissions:
+  report.*:
+    description: All reporting command permission.
+    default: op
+    children:
+      report.admin: true
+      report.player: true
+      report.view: true
+      report.flag: true
+      report.edit: true
+      report.reset: true
+      report.reload: true
+      report.listGui: true
+      report.comment: true
+      report.help: true
+      report.delete: true
+      report.comment.delete: true
+      report.comment.edit: true
+
